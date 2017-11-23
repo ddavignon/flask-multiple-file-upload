@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask App</title>
+        {{ dropzone.load() }}
+        {{ dropzone.style('border: 2px dashed #0087F7; margin: 10%; min-height: 400px;') }}
+    </head>
+    <body>
+        <h1>Hello from Flask!</h1>
+        {{ dropzone.create(action_view='index') }}
+    </body>
+</html>
